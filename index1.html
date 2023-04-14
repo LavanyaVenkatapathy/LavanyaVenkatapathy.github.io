@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>contant</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body class="secondPage" style="height: 100%;">
+    <div>
+        <p>Hi lavanya &#128151, I have been preparing for this speech 😅 for a very longtime, with lots of preparation, mistakes, and corrections.</p>
+        <p>27 April 2017 is the most momentous day in my life, and it is more than a simple day; it is a fresh beginning. I still recall these memories every day, 
+            and they make me smile. I hope you remember that we travelled together on April 29, 2017 [click on the heart].</p>
+            <img id="redHeart" src="Heart_png.png">
+           <p> My voice was blabbering the day I discovered your eye is as attractive as a little kid. 
+            I hope that day comes soon and never comes to an end</p>
+        
+        <p>I remember admiring your smile, compassion, chatty nature, and upbeat demeanour at the time. Now, I genuinely miss your smile, compassion, and chattiness.</p>
+        <p>Some claim that by thirty, life is over. Fuck them! There are still many things to do.</p>
+        <p>Go your own way. Keep kicking and alive. You'll see that great times are ahead. New peaks in business, friendship, and family. Believe in yourself and achieve your goals. You're as prepared as you ever will be.</p>   
+        <p>And one thing, just keep in mind whatever the situation, you have a buddy in me. Simply call whenever you want to talk.</p>
+        <p>Once again my hearty wishes.... Many more happy returns of the day .....HAPPY BIRTHDAY &#128151 </p>
+    </div>
+        
+
+<div id="modal-container">
+  <span class="close">&times;</span>
+  <a href="lavanya.jpg" download>
+    <img src="lavanya.jpg" alt="My Image">
+  </a>
+</div>
+</body>
+<script >
+    const modal = document.getElementById('modal-container');
+//const btn = document.getElementById('open-modal');
+const redHeart = document.getElementById('redHeart');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// btn.onclick = function() {
+// modal.style.display = "block";
+// }
+
+redHeart.onclick = function() {
+    modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+modal.style.display = "none";
+}
+</script>
+</html>

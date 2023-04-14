@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday_Greeting</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body class="firstPage" style="height: 100%;">
+    <div id="timeOutImage" style="display: none; height: 100%;">
+        <img class="happyBirthday" src="Birthday_png.png" alt="Happy_Birthday" >
+    
+    </div>
+    
+    <button class="button openButton" onclick="window.location.href='./index1.html'"> Open </button>
+</body>
+<script>
+    setTimeout(function(){
+        document.getElementById("timeOutImage").style.display = "flex";
+    },2000);
+</script>
+</html>

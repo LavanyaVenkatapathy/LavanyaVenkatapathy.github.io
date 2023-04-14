@@ -1,0 +1,122 @@
+.firstPage {
+    background-image: url("photo-1637338741891-4bc086664534.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover;
+}
+
+#timeOutImage {
+    display: flex;
+    align-items: center;
+  }
+.secondPage {
+    background-image: url("white_flower.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover;
+}
+.lavanya {
+    width: 50%;
+    height: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#redHeart {
+width: 50%;
+padding-left: 25%;
+}
+.button {
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+  }
+.openButton {
+    background-color: #7d3737;
+    color: white;
+    border: 2px solid #e7e7e7;
+    animation: buttonflip 2s 1;
+  }
+#open-modal{
+    padding: 12px 36px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    margin-left: 30%;
+}
+  
+.openButton:hover {
+    background-color: #e7e7e7;
+  }
+@keyframes buttonflip{
+    0% {
+        transform: rotate(0deg);
+        top: 0px;
+        background: white;
+        color: white;
+    }
+    /* 25% {
+        transform: rotate(90deg);
+        top: 0px;
+    } */
+    50% {
+        transform: rotate(180deg);
+        top: 40%;
+        background: #daa5ce;
+        color: #daa5ce;
+    }
+    /* 55% {
+        transform: rotate(180deg);
+        top: 50%;
+    } */
+    75% {
+        transform: rotate(0deg);
+        top: 65%;
+        background: #dd6d7c;
+        color: #dd6d7c;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 80%;
+    }
+}
+#modal-container {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black with opacity */
+  }
+  
+  #modal-container img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
